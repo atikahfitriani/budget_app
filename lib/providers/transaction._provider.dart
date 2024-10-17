@@ -21,6 +21,7 @@ class TransactionProvider with ChangeNotifier {
   TransactionProvider() {
     loadTransactions();
   }
+  
 
   Future<void> loadTransactions() async {
     final prefs = await SharedPreferences.getInstance();
